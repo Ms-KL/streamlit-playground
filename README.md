@@ -19,3 +19,5 @@ streamlit run uber_pickups.py
 ```shell
 streamlit run https://raw.githubusercontent.com/streamlit/demo-uber-nyc-pickups/master/streamlit_app.py
 ```
+
+![](assets/kristy_docs_complete.png)
