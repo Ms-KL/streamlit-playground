@@ -80,3 +80,10 @@ hist_values = np.histogram(
 
 # draw the histogram
 st.bar_chart(hist_values)
+
+#--- MAP
+
+st.subheader('Map of all pickups')
+
+# plot the data on a map
+st.map(data)
