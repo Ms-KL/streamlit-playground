@@ -5,6 +5,7 @@ Exploring the capabilities of Streamlit for data science purposes. https://strea
 ## Resources
 
 - streamlit [cheatsheet](https://daniellewisdl-streamlit-cheat-sheet-app-ytm9sg.streamlit.app/)
+- https://docs.streamlit.io/library/api-reference
 
 ## Command to run:
 

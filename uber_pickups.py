@@ -67,8 +67,13 @@ data = load_data(10000)
 data_load_state.text("Done! (using st.cache_data)")
 
 #--- APP DATA EXPLORATION
-st.subheader('Raw data')
-st.write(data)
+# st.subheader('Raw data')
+# st.write(data)
+
+# show/hide raw data with checkbox
+if st.checkbox('Show raw data'):
+    st.subheader('Raw data')
+    st.write(data)
 
 #--- HISTOGRAM
 
