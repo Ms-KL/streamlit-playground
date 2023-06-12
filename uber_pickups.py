@@ -80,3 +80,21 @@ hist_values = np.histogram(
 
 # draw the histogram
 st.bar_chart(hist_values)
+
+# #--- MAP
+# st.subheader('Map of all pickups')
+
+# # plot the data on a map
+# st.map(data)
+
+# # --- MAP WITH FILTER
+# hour_to_filter = 17
+# filtered_data = data[data[DATE_COLUMN].dt.hour == hour_to_filter]
+# st.subheader(f'Map of all pickups at {hour_to_filter}:00')
+# st.map(filtered_data)
+
+# --- MAP WITH FILTER AND SLIDER
+hour_to_filter = st.slider('hour', 0, 23, 17)  # min: 0h, max: 23h, default: 17h
+filtered_data = data[data[DATE_COLUMN].dt.hour == hour_to_filter]
+st.subheader(f'Map of all pickups at {hour_to_filter}:00')
+st.map(filtered_data)
