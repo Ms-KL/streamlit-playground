@@ -7,6 +7,10 @@ import pandas as pd
 import numpy as np
 
 
+#--- KRISTY HEADER
+st.title("Kristy's Streamlit Playground")
+st.write('''This is a playground for me to learn how to use Streamlit via the documentation. I plan on using this to create a dashboard for my data science projects.''')
+
 #--- APP CONTENT
 st.title('Uber pickups in NYC')
 
@@ -65,3 +69,14 @@ data_load_state.text("Done! (using st.cache_data)")
 #--- APP DATA EXPLORATION
 st.subheader('Raw data')
 st.write(data)
+
+#--- HISTOGRAM
+
+st.subheader('Number of pickups by hour')
+
+# numpy function to generate a histogram that breaks the data into 24 bins (one for each hour of the day). This is the data we will plot:
+hist_values = np.histogram(
+    data[DATE_COLUMN].dt.hour, bins=24, range=(0,24))[0]
+
+# draw the histogram
+st.bar_chart(hist_values)
