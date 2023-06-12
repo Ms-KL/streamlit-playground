@@ -11,6 +11,7 @@ Exploring the capabilities of Streamlit for data science purposes. https://strea
 
 ```shell
 streamlit run streamlit-playground.py
+streamlit run uber_pickups.py
 ```
 
 ## Run demo:
